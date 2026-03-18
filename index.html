@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Upasana Sen — Sustainability PM & ESG Data Specialist</title>
+<meta name="description" content="Upasana Sen is a Sustainability Project Manager and ESG Data Specialist based in Lund, Sweden. MSc Lund University. TCFD Practitioner. Building AI-powered climate tools.">
+<meta name="keywords" content="Upasana Sen, sustainability, ESG, CSRD, EU Taxonomy, LCA, carbon accounting, project manager, Lund University, Sweden">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0f1a0f;
+    --forest: #1a3a1a;
+    --moss: #2d6a2d;
+    --sage: #4a8c4a;
+    --leaf: #6ab04c;
+    --mist: #e8f0e8;
+    --paper: #f5f7f3;
+    --white: #ffffff;
+    --gold: #c8a84b;
+    --rust: #8b3a2a;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    overflow-x: hidden;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed; top: 0; width: 100%; z-index: 100;
+    padding: 1.25rem 3rem;
+    display: flex; justify-content: space-between; align-items: center;
+    background: rgba(245,247,243,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(45,106,45,0.12);
+  }
+  .nav-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem; letter-spacing: 0.02em;
+    color: var(--forest);
+    text-decoration: none;
+  }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a {
+    font-size: 0.82rem; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--moss); text-decoration: none; font-weight: 500;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--ink); }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-left {
+    background: var(--forest);
+    display: flex; flex-direction: column; justify-content: center;
+    padding: 8rem 4rem 4rem 5rem;
+    position: relative;
+  }
+
+  .hero-left::after {
+    content: '';
+    position: absolute; right: -1px; top: 0; bottom: 0; width: 80px;
+    background: var(--paper);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%);
+  }
+
+  .hero-tag {
+    font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--leaf); margin-bottom: 1.5rem; font-weight: 500;
+  }
+
+  .hero-name {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(3rem, 5vw, 4.5rem);
+    line-height: 1.05;
+    color: var(--white);
+    margin-bottom: 1rem;
+  }
+
+  .hero-name em {
+    font-style: italic;
+    color: var(--leaf);
+  }
+
+  .hero-role {
+    font-size: 1rem; color: rgba(255,255,255,0.6);
+    line-height: 1.7; margin-bottom: 2.5rem;
+    font-weight: 300; max-width: 380px;
+  }
+
+  .hero-certs {
+    display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 2.5rem;
+  }
+
+  .cert-chip {
+    font-size: 0.7rem; letter-spacing: 0.06em; font-weight: 500;
+    padding: 0.3rem 0.75rem;
+    border: 1px solid rgba(106,176,76,0.4);
+    color: var(--leaf); border-radius: 2px;
+  }
+
+  .hero-links { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+  .btn {
+    display: inline-block;
+    font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase;
+    font-weight: 500; text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    transition: all 0.2s;
+  }
+
+  .btn-primary {
+    background: var(--leaf); color: var(--ink);
+  }
+  .btn-primary:hover { background: #7dc85e; }
+
+  .btn-outline {
+    border: 1px solid rgba(255,255,255,0.3);
+    color: rgba(255,255,255,0.8);
+  }
+  .btn-outline:hover {
+    border-color: rgba(255,255,255,0.7);
+    color: var(--white);
+  }
+
+  .hero-right {
+    display: flex; flex-direction: column; justify-content: center;
+    padding: 8rem 4rem 4rem 5rem;
+    position: relative;
+  }
+
+  .hero-stat-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .hero-stat {
+    border-left: 2px solid var(--leaf);
+    padding-left: 1rem;
+  }
+
+  .stat-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem; color: var(--forest); line-height: 1;
+    margin-bottom: 0.25rem;
+  }
+
+  .stat-label {
+    font-size: 0.75rem; color: var(--sage);
+    letter-spacing: 0.05em; text-transform: uppercase; font-weight: 500;
+  }
+
+  .hero-bio {
+    font-size: 0.95rem; line-height: 1.8; color: #3a4a3a;
+    font-weight: 300; max-width: 420px;
+  }
+
+  .hero-bio strong { color: var(--forest); font-weight: 500; }
+
+  /* ── SECTION BASE ── */
+  section { padding: 6rem 5rem; }
+
+  .section-label {
+    font-size: 0.7rem; letter-spacing: 0.25em; text-transform: uppercase;
+    color: var(--sage); font-weight: 500; margin-bottom: 0.5rem;
+  }
+
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 3vw, 2.8rem);
+    color: var(--forest); margin-bottom: 3rem;
+    line-height: 1.15;
+  }
+
+  /* ── PROJECTS ── */
+  #projects { background: var(--white); }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5px;
+    background: rgba(45,106,45,0.12);
+  }
+
+  .project-card {
+    background: var(--white);
+    padding: 2.5rem;
+    position: relative; overflow: hidden;
+    transition: background 0.25s;
+    text-decoration: none; color: inherit;
+    display: block;
+  }
+
+  .project-card::before {
+    content: '';
+    position: absolute; bottom: 0; left: 0;
+    width: 100%; height: 3px;
+    background: var(--leaf);
+    transform: scaleX(0); transform-origin: left;
+    transition: transform 0.3s;
+  }
+
+  .project-card:hover { background: var(--mist); }
+  .project-card:hover::before { transform: scaleX(1); }
+
+  .project-num {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.7rem; color: var(--sage);
+    letter-spacing: 0.1em; margin-bottom: 1.5rem;
+  }
+
+  .project-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem; color: var(--forest);
+    margin-bottom: 0.75rem; line-height: 1.3;
+  }
+
+  .project-desc {
+    font-size: 0.85rem; line-height: 1.7;
+    color: #4a5c4a; margin-bottom: 1.5rem;
+    font-weight: 300;
+  }
+
+  .project-stack {
+    display: flex; flex-wrap: wrap; gap: 0.4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .stack-tag {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem; padding: 0.2rem 0.5rem;
+    background: var(--mist); color: var(--moss);
+    border-radius: 2px;
+  }
+
+  .project-links { display: flex; gap: 1rem; }
+
+  .project-link {
+    font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase;
+    font-weight: 500; color: var(--moss); text-decoration: none;
+    border-bottom: 1px solid var(--leaf);
+    padding-bottom: 1px; transition: color 0.2s;
+  }
+
+  .project-link:hover { color: var(--forest); }
+
+  /* ── EXPERIENCE ── */
+  #experience { background: var(--paper); }
+
+  .experience-list { display: flex; flex-direction: column; gap: 0; }
+
+  .exp-item {
+    display: grid; grid-template-columns: 200px 1fr;
+    gap: 3rem; padding: 2.5rem 0;
+    border-bottom: 1px solid rgba(45,106,45,0.12);
+    position: relative;
+  }
+
+  .exp-item::before {
+    content: '';
+    position: absolute; left: 200px; top: 0; bottom: 0;
+    width: 1px; background: rgba(45,106,45,0.12);
+  }
+
+  .exp-left { padding-top: 0.25rem; }
+
+  .exp-dates {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.7rem; color: var(--sage);
+    letter-spacing: 0.05em; margin-bottom: 0.5rem;
+  }
+
+  .exp-org {
+    font-size: 0.8rem; font-weight: 500;
+    color: var(--moss); margin-bottom: 0.25rem;
+    text-transform: uppercase; letter-spacing: 0.06em;
+  }
+
+  .exp-location {
+    font-size: 0.75rem; color: #7a8a7a; font-weight: 300;
+  }
+
+  .exp-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.15rem; color: var(--forest);
+    margin-bottom: 0.75rem;
+  }
+
+  .exp-desc {
+    font-size: 0.87rem; line-height: 1.75;
+    color: #3a4a3a; font-weight: 300; max-width: 560px;
+  }
+
+  /* ── SKILLS ── */
+  #skills { background: var(--forest); }
+  #skills .section-label { color: rgba(106,176,76,0.7); }
+  #skills .section-title { color: var(--white); }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+
+  .skill-group { }
+
+  .skill-group-title {
+    font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--leaf); font-weight: 500;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(106,176,76,0.2);
+  }
+
+  .skill-item {
+    font-size: 0.85rem; color: rgba(255,255,255,0.7);
+    padding: 0.35rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    font-weight: 300;
+    display: flex; align-items: center; gap: 0.5rem;
+  }
+
+  .skill-item::before {
+    content: '';
+    width: 4px; height: 4px; border-radius: 50%;
+    background: var(--leaf); flex-shrink: 0;
+  }
+
+  /* ── EDUCATION ── */
+  #education { background: var(--white); }
+
+  .edu-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;
+  }
+
+  .edu-card {
+    border: 1px solid rgba(45,106,45,0.15);
+    padding: 2rem;
+    position: relative;
+  }
+
+  .edu-card::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    background: linear-gradient(90deg, var(--moss), var(--leaf));
+  }
+
+  .edu-degree {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem; color: var(--forest);
+    margin-bottom: 0.5rem; line-height: 1.4;
+  }
+
+  .edu-school {
+    font-size: 0.8rem; font-weight: 500;
+    color: var(--moss); text-transform: uppercase;
+    letter-spacing: 0.06em; margin-bottom: 0.25rem;
+  }
+
+  .edu-year {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.7rem; color: var(--sage);
+    margin-bottom: 1rem;
+  }
+
+  .edu-detail {
+    font-size: 0.8rem; line-height: 1.7;
+    color: #5a6a5a; font-weight: 300;
+  }
+
+  /* ── CONTACT ── */
+  #contact {
+    background: var(--ink);
+    text-align: center;
+    padding: 6rem 5rem;
+  }
+
+  #contact .section-label { color: rgba(106,176,76,0.6); }
+  #contact .section-title { color: var(--white); margin-bottom: 1rem; }
+
+  .contact-sub {
+    font-size: 1rem; color: rgba(255,255,255,0.5);
+    font-weight: 300; margin-bottom: 3rem;
+    max-width: 480px; margin-left: auto; margin-right: auto;
+    line-height: 1.7;
+  }
+
+  .contact-links {
+    display: flex; justify-content: center;
+    gap: 1.5rem; flex-wrap: wrap; margin-bottom: 3rem;
+  }
+
+  .contact-link {
+    font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase;
+    font-weight: 500; text-decoration: none;
+    padding: 0.85rem 2rem;
+    transition: all 0.2s;
+  }
+
+  .contact-link.primary {
+    background: var(--leaf); color: var(--ink);
+  }
+  .contact-link.primary:hover { background: #7dc85e; }
+
+  .contact-link.ghost {
+    border: 1px solid rgba(255,255,255,0.2);
+    color: rgba(255,255,255,0.7);
+  }
+  .contact-link.ghost:hover {
+    border-color: rgba(255,255,255,0.6); color: var(--white);
+  }
+
+  .contact-email {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.85rem; color: rgba(255,255,255,0.35);
+    letter-spacing: 0.05em;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--ink);
+    border-top: 1px solid rgba(255,255,255,0.05);
+    padding: 1.5rem 5rem;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+
+  .footer-copy {
+    font-size: 0.75rem; color: rgba(255,255,255,0.25);
+    font-weight: 300;
+  }
+
+  .footer-links { display: flex; gap: 1.5rem; }
+  .footer-links a {
+    font-size: 0.72rem; color: rgba(255,255,255,0.3);
+    text-decoration: none; letter-spacing: 0.06em;
+    transition: color 0.2s;
+  }
+  .footer-links a:hover { color: var(--leaf); }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .hero-left > * {
+    animation: fadeUp 0.7s ease both;
+  }
+  .hero-tag { animation-delay: 0.1s; }
+  .hero-name { animation-delay: 0.2s; }
+  .hero-role { animation-delay: 0.3s; }
+  .hero-certs { animation-delay: 0.4s; }
+  .hero-links { animation-delay: 0.5s; }
+
+  .hero-right > * {
+    animation: fadeUp 0.7s ease both;
+  }
+  .hero-stat-grid { animation-delay: 0.35s; }
+  .hero-bio { animation-delay: 0.5s; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 1024px) {
+    section { padding: 4rem 2.5rem; }
+    .hero { grid-template-columns: 1fr; min-height: auto; }
+    .hero-left { padding: 8rem 2.5rem 3rem; }
+    .hero-left::after { display: none; }
+    .hero-right { padding: 3rem 2.5rem; }
+    .projects-grid { grid-template-columns: 1fr 1fr; }
+    .skills-grid { grid-template-columns: 1fr 1fr; }
+    .edu-grid { grid-template-columns: 1fr; }
+    nav { padding: 1rem 2rem; }
+    .nav-links { gap: 1.2rem; }
+  }
+
+  @media (max-width: 640px) {
+    .projects-grid { grid-template-columns: 1fr; }
+    .skills-grid { grid-template-columns: 1fr; }
+    .exp-item { grid-template-columns: 1fr; gap: 0.5rem; }
+    .exp-item::before { display: none; }
+    nav { padding: 1rem 1.5rem; }
+    .nav-links { display: none; }
+    section { padding: 3.5rem 1.5rem; }
+    footer { flex-direction: column; gap: 1rem; padding: 1.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">Upasana Sen</a>
+  <ul class="nav-links">
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <p class="hero-tag">Sustainability PM · ESG Data · AI Tools · Lund, Sweden</p>
+    <h1 class="hero-name">Upasana<br><em>Sen</em></h1>
+    <p class="hero-role">I build data tools that make sustainability measurable — bridging climate science, ESG strategy, and AI across five countries and two master's degrees.</p>
+    <div class="hero-certs">
+      <span class="cert-chip">TCFD Practitioner</span>
+      <span class="cert-chip">MIT LCA</span>
+      <span class="cert-chip">CSM</span>
+      <span class="cert-chip">GHG Protocol</span>
+      <span class="cert-chip">CSRD · EU Taxonomy</span>
+    </div>
+    <div class="hero-links">
+      <a href="#projects" class="btn btn-primary">View Projects</a>
+      <a href="mailto:upasana19sen95@gmail.com" class="btn btn-outline">Get in Touch</a>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="hero-stat-grid">
+      <div class="hero-stat">
+        <div class="stat-num">5</div>
+        <div class="stat-label">Countries Worked</div>
+      </div>
+      <div class="hero-stat">
+        <div class="stat-num">2</div>
+        <div class="stat-label">Master's Degrees</div>
+      </div>
+      <div class="hero-stat">
+        <div class="stat-num">4+</div>
+        <div class="stat-label">Live Data Tools</div>
+      </div>
+      <div class="hero-stat">
+        <div class="stat-num">60+</div>
+        <div class="stat-label">Suppliers Assessed</div>
+      </div>
+    </div>
+    <p class="hero-bio">
+      MSc Environmental Studies & Sustainability Science, <strong>Lund University</strong> · MSc Project Management, <strong>EAE Business School</strong> · BSc Agricultural Science, SHUATS.<br><br>
+      Experienced in CSRD compliance, double materiality assessment, carbon accounting, and building Python-based tools that turn sustainability data into decisions. Fluent in <strong>Swedish</strong> and English.
+    </p>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <p class="section-label">Proof of Work</p>
+  <h2 class="section-title">Live Projects</h2>
+  <div class="projects-grid">
+
+    <a class="project-card" href="https://sustainable-workplace-dashboard.streamlit.app/" target="_blank">
+      <p class="project-num">01 / Live on Streamlit</p>
+      <h3 class="project-title">Sustainable Workplace Transformation Dashboard</h3>
+      <p class="project-desc">Multi-site program dashboard integrating carbon analysis, ROI modelling, vendor ESG scoring, governance tracking, and compliance monitoring. Built for sustainability teams managing office transformation programmes.</p>
+      <div class="project-stack">
+        <span class="stack-tag">Python</span>
+        <span class="stack-tag">Streamlit</span>
+        <span class="stack-tag">Pandas</span>
+        <span class="stack-tag">Pydeck</span>
+        <span class="stack-tag">ESG</span>
+      </div>
+      <div class="project-links">
+        <span class="project-link">Live Demo →</span>
+      </div>
+    </a>
+
+    <a class="project-card" href="https://carbon-aware-cloud-tool.streamlit.app" target="_blank">
+      <p class="project-num">02 / Live on Streamlit</p>
+      <h3 class="project-title">Carbon-Aware Cloud Deployment Decision Tool</h3>
+      <p class="project-desc">Decision-support tool for infrastructure teams to optimise cloud region selection using Scope 2 location-based emission factors and internal carbon pricing. Powered by EEA 2023 grid emissions data.</p>
+      <div class="project-stack">
+        <span class="stack-tag">Python</span>
+        <span class="stack-tag">Streamlit</span>
+        <span class="stack-tag">EEA Data</span>
+        <span class="stack-tag">Scope 2</span>
+        <span class="stack-tag">GHG Protocol</span>
+      </div>
+      <div class="project-links">
+        <span class="project-link">Live Demo →</span>
+      </div>
+    </a>
+
+    <a class="project-card" href="https://upasanasen.github.io/project/ghg_wildfire/" target="_blank">
+      <p class="project-num">03 / Published Analysis</p>
+      <h3 class="project-title">GHG Emissions — South American Wildfire Analysis</h3>
+      <p class="project-desc">20-year GHG accounting analysis of South American savanna wildfire emissions using GFED4 satellite data. Applied GHG Protocol methodology to quantify CO₂, CH₄, and N₂O emissions 1997–2016.</p>
+      <div class="project-stack">
+        <span class="stack-tag">Python</span>
+        <span class="stack-tag">NumPy</span>
+        <span class="stack-tag">HDF5</span>
+        <span class="stack-tag">GFED4</span>
+        <span class="stack-tag">GHG Protocol</span>
+      </div>
+      <div class="project-links">
+        <span class="project-link">View Analysis →</span>
+      </div>
+    </a>
+
+    <a class="project-card" href="https://github.com/upasanasen" target="_blank">
+      <p class="project-num">04 / ML Research · Lund University</p>
+      <h3 class="project-title">Swedish Agriculture 2050 — ML Climate Impact Model</h3>
+      <p class="project-desc">XGBoost regression model trained on 55 years of Swedish crop yield data (SCB) to predict county-level yields across 25 counties and 18 crops under RCP8.5 climate scenarios. Includes ClimateEU agro-climatic projections.</p>
+      <div class="project-stack">
+        <span class="stack-tag">Python</span>
+        <span class="stack-tag">XGBoost</span>
+        <span class="stack-tag">ClimateEU</span>
+        <span class="stack-tag">Pandas</span>
+        <span class="stack-tag">scikit-learn</span>
+      </div>
+      <div class="project-links">
+        <span class="project-link">GitHub →</span>
+      </div>
+    </a>
+
+    <a class="project-card" href="https://github.com/upasanasen" target="_blank">
+      <p class="project-num">05 / In Development</p>
+      <h3 class="project-title">Building LCA Carbon Calculator — EN 15978</h3>
+      <p class="project-desc">Lifecycle carbon calculator for buildings following EN 15978 standard — covering stages A1–A5, B6, and C. Outputs stage-by-stage carbon profile with EPD material factors and comparison against Boverket klimatdeklaration benchmarks.</p>
+      <div class="project-stack">
+        <span class="stack-tag">Python</span>
+        <span class="stack-tag">Streamlit</span>
+        <span class="stack-tag">EN 15978</span>
+        <span class="stack-tag">EPD Data</span>
+        <span class="stack-tag">Boverket</span>
+      </div>
+      <div class="project-links">
+        <span class="project-link">Coming Soon →</span>
+      </div>
+    </a>
+
+    <a class="project-card" href="https://github.com/upasanasen" target="_blank">
+      <p class="project-num">06 / In Development</p>
+      <h3 class="project-title">AI ESG Report Analyser</h3>
+      <p class="project-desc">Upload any company sustainability report PDF → AI extracts KPIs, flags greenwashing, scores against GRI and ESRS standards, and generates a structured gap analysis. Powered by Claude API and LangChain.</p>
+      <div class="project-stack">
+        <span class="stack-tag">Python</span>
+        <span class="stack-tag">Claude API</span>
+        <span class="stack-tag">LangChain</span>
+        <span class="stack-tag">ESRS</span>
+        <span class="stack-tag">GRI</span>
+      </div>
+      <div class="project-links">
+        <span class="project-link">Coming Soon →</span>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <p class="section-label">Career Journey</p>
+  <h2 class="section-title">Work Experience</h2>
+  <div class="experience-list">
+
+    <div class="exp-item">
+      <div class="exp-left">
+        <p class="exp-dates">Jul – Sep 2025</p>
+        <p class="exp-org">Beder</p>
+        <p class="exp-location">Barcelona, Spain</p>
+      </div>
+      <div class="exp-right">
+        <h3 class="exp-title">Business Developer</h3>
+        <p class="exp-desc">Coordinated B2B outbound workflows across EU and US markets for a travel-tech platform. Designed CRM segmentation logic, managed 200+ partner accounts, and led cross-functional delivery coordination across Product, Sales, and Operations. Built structured process documentation and workflow manuals that reduced reporting fragmentation across teams.</p>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-left">
+        <p class="exp-dates">Oct 2022 – Jul 2025</p>
+        <p class="exp-org">NaturVäg</p>
+        <p class="exp-location">Sweden</p>
+      </div>
+      <div class="exp-right">
+        <h3 class="exp-title">Founder & Sustainability Writer</h3>
+        <p class="exp-desc">Founded and led a sustainability platform publishing 50+ articles on climate, ESG, and environmental policy. Built a community audience, managed editorial strategy, and established thought leadership in Swedish and international sustainability circles.</p>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-left">
+        <p class="exp-dates">Nov 2022 – Sep 2023</p>
+        <p class="exp-org">Green Cloud Nine</p>
+        <p class="exp-location">Europe</p>
+      </div>
+      <div class="exp-right">
+        <h3 class="exp-title">Sustainability Advisor & ESG Coordinator</h3>
+        <p class="exp-desc">Built the organisation's first ESG vendor evaluation framework, assessing 60+ suppliers against environmental and social criteria aligned with CSRD and EU Taxonomy. Established the data foundation for the first annual sustainability report covering 150+ products. Created reporting manuals, training toolkits, and vendor guidelines. Led double materiality-style assessments identifying priority sustainability topics.</p>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-left">
+        <p class="exp-dates">Dec 2019 – Apr 2024</p>
+        <p class="exp-org">Brock University</p>
+        <p class="exp-location">Canada</p>
+      </div>
+      <div class="exp-right">
+        <h3 class="exp-title">Sustainability Research Collaborator</h3>
+        <p class="exp-desc">UNESCO Chair in Community Sustainability. Applied DPSIR systems thinking framework to develop climate adaptation strategies addressing gender-differentiated climate vulnerabilities across three countries. Produced structured analytical outputs for institutional stakeholders. Co-authored academic publications on ecosystem-based adaptation.</p>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-left">
+        <p class="exp-dates">Sep 2021 – Aug 2022</p>
+        <p class="exp-org">Skåne Startups</p>
+        <p class="exp-location">Malmö, Sweden</p>
+      </div>
+      <div class="exp-right">
+        <h3 class="exp-title">Venture Advisor & Sustainability Analyst</h3>
+        <p class="exp-desc">Coordinated a regional sustainability programme across 100+ startups and 400+ stakeholders in the Skåne ecosystem. Evaluated sustainability maturity, facilitated investor-founder connections, and produced structured ESG assessments for international investors and corporate partners.</p>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-left">
+        <p class="exp-dates">Jun – Aug 2020</p>
+        <p class="exp-org">Botildenborg</p>
+        <p class="exp-location">Malmö, Sweden</p>
+      </div>
+      <div class="exp-right">
+        <h3 class="exp-title">Sustainability Solutions Intern</h3>
+        <p class="exp-desc">Analysed local food supply chain sustainability using Causal Loop Diagram (CLD) methodology. Conducted farmer interviews, mapped bottlenecks, and developed data-backed strategies for promoting locally grown food across Skåne.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <p class="section-label">Expertise Areas</p>
+  <h2 class="section-title">Skills & Frameworks</h2>
+  <div class="skills-grid">
+
+    <div class="skill-group">
+      <p class="skill-group-title">Sustainability & ESG</p>
+      <p class="skill-item">CSRD & ESRS Reporting</p>
+      <p class="skill-item">EU Taxonomy Alignment</p>
+      <p class="skill-item">Double Materiality Assessment</p>
+      <p class="skill-item">GHG Protocol (Scope 1, 2, 3)</p>
+      <p class="skill-item">TCFD Climate Risk Framework</p>
+      <p class="skill-item">Life Cycle Assessment (LCA)</p>
+      <p class="skill-item">ESG Vendor Evaluation</p>
+      <p class="skill-item">Carbon Accounting</p>
+    </div>
+
+    <div class="skill-group">
+      <p class="skill-group-title">AI & Data</p>
+      <p class="skill-item">Python (Pandas, NumPy)</p>
+      <p class="skill-item">Machine Learning (XGBoost)</p>
+      <p class="skill-item">Streamlit Dashboards</p>
+      <p class="skill-item">Power BI</p>
+      <p class="skill-item">Data Visualisation</p>
+      <p class="skill-item">Claude API / LangChain</p>
+      <p class="skill-item">Jupyter Notebooks</p>
+      <p class="skill-item">GitHub & Version Control</p>
+    </div>
+
+    <div class="skill-group">
+      <p class="skill-group-title">Project Management</p>
+      <p class="skill-item">Agile & Scrum (CSM)</p>
+      <p class="skill-item">Waterfall & PRINCE2</p>
+      <p class="skill-item">Stakeholder Management</p>
+      <p class="skill-item">Risk Management</p>
+      <p class="skill-item">Backlog & Sprint Planning</p>
+      <p class="skill-item">MS Project & Jira</p>
+      <p class="skill-item">Advanced Excel</p>
+      <p class="skill-item">Cross-functional Delivery</p>
+    </div>
+
+    <div class="skill-group">
+      <p class="skill-group-title">Languages & Systems</p>
+      <p class="skill-item">Swedish — Professional</p>
+      <p class="skill-item">English — Full Professional</p>
+      <p class="skill-item">Spanish — Working</p>
+      <p class="skill-item">Hindi & Bengali — Native</p>
+      <p class="skill-item">Systems Thinking (DPSIR)</p>
+      <p class="skill-item">Causal Loop Diagrams</p>
+      <p class="skill-item">Climate Scenario Analysis</p>
+      <p class="skill-item">Supply Chain Sustainability</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <p class="section-label">Academic Background</p>
+  <h2 class="section-title">Education</h2>
+  <div class="edu-grid">
+
+    <div class="edu-card">
+      <p class="edu-school">EAE Business School</p>
+      <p class="edu-year">2024 – 2025 · Barcelona, Spain</p>
+      <h3 class="edu-degree">MSc Project Management</h3>
+      <p class="edu-detail">Agile & Waterfall delivery, risk management, stakeholder management, Power BI, MS Project, Jira. Certified Scrum Master (CSM).</p>
+    </div>
+
+    <div class="edu-card">
+      <p class="edu-school">Lund University</p>
+      <p class="edu-year">2019 – 2022 · Lund, Sweden</p>
+      <h3 class="edu-degree">MSc Environmental Studies & Sustainability Science (LUMES)</h3>
+      <p class="edu-detail">Earth system science, climate governance, sustainability assessment, water & sustainability, urban systems, systems thinking. Research: climate adaptation, gender & EbA.</p>
+    </div>
+
+    <div class="edu-card">
+      <p class="edu-school">SHUATS</p>
+      <p class="edu-year">2014 – 2018 · Prayagraj, India</p>
+      <h3 class="edu-degree">BSc Agricultural Extension & Community Science</h3>
+      <p class="edu-detail">Food systems, agricultural supply chains, community development, rural technology. Food science research internships in Italy and India.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <p class="section-label">Let's Connect</p>
+  <h2 class="section-title" style="margin-bottom:1rem;">Open to roles in<br>Sweden & the EU</h2>
+  <p class="contact-sub">Sustainability PM · ESG Data Specialist · Climate Strategy · AI-powered sustainability tools. Available immediately. Based in Lund, Sweden.</p>
+  <div class="contact-links">
+    <a href="mailto:upasana19sen95@gmail.com" class="contact-link primary">Send an Email</a>
+    <a href="https://linkedin.com/in/upasana-sen" target="_blank" class="contact-link ghost">LinkedIn</a>
+    <a href="https://github.com/upasanasen" target="_blank" class="contact-link ghost">GitHub</a>
+  </div>
+  <p class="contact-email">upasana19sen95@gmail.com</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p class="footer-copy">© 2026 Upasana Sen · Lund, Sweden</p>
+  <div class="footer-links">
+    <a href="https://linkedin.com/in/upasana-sen" target="_blank">LinkedIn</a>
+    <a href="https://github.com/upasanasen" target="_blank">GitHub</a>
+    <a href="mailto:upasana19sen95@gmail.com">Email</a>
+  </div>
+</footer>
+
+</body>
+</html>
