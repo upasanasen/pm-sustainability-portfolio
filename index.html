@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Upasana Sen — ESG Reporting & Sustainability Project Coordinator</title>
+<meta name="description" content="ESG Reporting & Sustainability Project Coordinator. CSRD/ESRS readiness, supplier ESG, and live ESG tools. Lund, Sweden.">
+<meta name="keywords" content="Upasana Sen, ESG reporting, CSRD, ESRS, VSME, supplier sustainability, sustainability project coordinator, Sweden">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --bg: #f7f4ee;
+    --bg-alt: #efeae0;
+    --ink: #1a1a1a;
+    --ink-soft: #4a4a4a;
+    --ink-muted: #7a7a7a;
+    --rule: #d8d2c4;
+    --accent: #2f5d3a;
+    --accent-soft: #5a8268;
+    --max: 1100px;
+    --gutter: clamp(20px, 5vw, 56px);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    color: var(--ink);
+    background: var(--bg);
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Typography */
+  .display, h1, h2, h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    line-height: 1.15;
+    color: var(--ink);
+  }
+
+  h1 { font-size: clamp(2.5rem, 6vw, 4.5rem); }
+  h2 { font-size: clamp(1.75rem, 3.5vw, 2.5rem); margin-bottom: 1rem; }
+  h3 { font-size: 1.35rem; margin-bottom: 0.5rem; }
+
+  p { color: var(--ink-soft); }
+  a { color: var(--ink); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:hover { color: var(--accent); }
+
+  /* Layout */
+  .container {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 var(--gutter);
+  }
+
+  section {
+    padding: clamp(60px, 9vw, 110px) 0;
+    border-top: 1px solid var(--rule);
+  }
+
+  .section-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+
+  /* Nav */
+  nav {
+    position: sticky;
+    top: 0;
+    background: rgba(247, 244, 238, 0.92);
+    backdrop-filter: blur(10px);
+    z-index: 50;
+    border-bottom: 1px solid var(--rule);
+  }
+  nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+  nav .brand {
+    font-family: 'Fraunces', serif;
+    font-size: 1.05rem;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: -0.01em;
+  }
+  nav ul {
+    display: flex;
+    gap: clamp(16px, 2.5vw, 32px);
+    list-style: none;
+  }
+  nav ul a {
+    text-decoration: none;
+    font-size: 0.875rem;
+    color: var(--ink-soft);
+  }
+  nav ul a:hover { color: var(--ink); }
+  @media (max-width: 640px) {
+    nav ul { display: none; }
+  }
+
+  /* Hero */
+  .hero {
+    border-top: none;
+    padding-top: clamp(60px, 10vw, 100px);
+  }
+  .hero-meta {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--accent);
+    margin-bottom: 2rem;
+    font-weight: 500;
+  }
+  .hero h1 {
+    margin-bottom: 1.75rem;
+    max-width: 18ch;
+  }
+  .hero h1 em {
+    font-style: italic;
+    color: var(--accent);
+  }
+  .hero-lead {
+    font-size: clamp(1.05rem, 1.6vw, 1.25rem);
+    line-height: 1.55;
+    max-width: 56ch;
+    color: var(--ink-soft);
+    margin-bottom: 2.5rem;
+  }
+  .hero-actions {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .btn {
+    display: inline-block;
+    padding: 12px 22px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 1px solid var(--ink);
+    transition: all 0.2s ease;
+  }
+  .btn-primary { background: var(--ink); color: var(--bg); }
+  .btn-primary:hover { background: var(--accent); border-color: var(--accent); color: white; }
+  .btn-secondary:hover { background: var(--ink); color: var(--bg); }
+
+  /* Stat strip */
+  .stats {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+  }
+  .stat {
+    background: var(--bg);
+    padding: 1.5rem 1.25rem;
+  }
+  .stat-num {
+    font-family: 'Fraunces', serif;
+    font-size: 2.25rem;
+    line-height: 1;
+    color: var(--ink);
+    margin-bottom: 0.4rem;
+  }
+  .stat-label {
+    font-size: 0.78rem;
+    color: var(--ink-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  /* About */
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: clamp(30px, 6vw, 70px);
+    align-items: start;
+  }
+  @media (max-width: 720px) {
+    .about-grid { grid-template-columns: 1fr; }
+  }
+  .about p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 1.1rem;
+    max-width: 60ch;
+  }
+  .about p:last-child { margin-bottom: 0; }
+
+  /* Tools */
+  .tools-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    margin-top: 2rem;
+  }
+  .tool-card {
+    background: var(--bg);
+    border: 1px solid var(--rule);
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 5fr 4fr;
+    transition: border-color 0.2s ease;
+  }
+  .tool-card:hover { border-color: var(--ink); }
+  @media (max-width: 720px) {
+    .tool-card { grid-template-columns: 1fr; }
+  }
+  .tool-text {
+    padding: 2rem clamp(1.25rem, 2.5vw, 2.25rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .tool-text h3 { margin-bottom: 0.85rem; }
+  .tool-text p { font-size: 0.95rem; margin-bottom: 1.25rem; }
+  .tool-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 1.25rem;
+  }
+  .stack-tag {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 4px 10px;
+    border: 1px solid var(--rule);
+    color: var(--ink-soft);
+    background: var(--bg-alt);
+  }
+  .tool-links {
+    display: flex;
+    gap: 18px;
+    font-size: 0.88rem;
+  }
+  .tool-img {
+    background: var(--bg-alt);
+    border-left: 1px solid var(--rule);
+    overflow: hidden;
+    min-height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @media (max-width: 720px) {
+    .tool-img { border-left: none; border-top: 1px solid var(--rule); }
+  }
+  .tool-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .tool-img-placeholder {
+    color: var(--ink-muted);
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  /* Projects */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+    margin-top: 2rem;
+  }
+  .project-card {
+    background: var(--bg);
+    padding: 2rem clamp(1.25rem, 2.5vw, 2rem);
+  }
+  .project-card .project-num {
+    font-family: 'Fraunces', serif;
+    font-size: 0.9rem;
+    color: var(--ink-muted);
+    margin-bottom: 1rem;
+    font-style: italic;
+  }
+  .project-card h3 { margin-bottom: 0.75rem; font-size: 1.2rem; }
+  .project-card p { font-size: 0.92rem; margin-bottom: 1rem; }
+  .project-card .stack-tag { margin-bottom: 8px; }
+
+  /* Experience */
+  .timeline {
+    margin-top: 2rem;
+    display: grid;
+    gap: 0;
+  }
+  .role {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: clamp(20px, 4vw, 50px);
+    padding: 1.75rem 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .role:last-child { border-bottom: none; }
+  @media (max-width: 720px) {
+    .role { grid-template-columns: 1fr; gap: 8px; }
+  }
+  .role-meta {
+    font-size: 0.85rem;
+    color: var(--ink-muted);
+  }
+  .role-date {
+    font-family: 'Fraunces', serif;
+    font-size: 0.95rem;
+    color: var(--ink);
+    margin-bottom: 0.25rem;
+  }
+  .role-body h3 { font-size: 1.15rem; margin-bottom: 0.5rem; }
+  .role-body .role-org {
+    font-size: 0.9rem;
+    color: var(--accent);
+    margin-bottom: 0.6rem;
+  }
+  .role-body p { font-size: 0.95rem; }
+
+  /* Skills */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: clamp(28px, 4vw, 48px);
+    margin-top: 2rem;
+  }
+  .skill-group h3 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    margin-bottom: 1rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+  }
+  .skill-group ul {
+    list-style: none;
+  }
+  .skill-group li {
+    padding: 6px 0;
+    font-size: 0.92rem;
+    color: var(--ink-soft);
+    border-bottom: 1px solid var(--rule);
+  }
+  .skill-group li:last-child { border-bottom: none; }
+
+  /* Education */
+  .edu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: clamp(24px, 4vw, 40px);
+    margin-top: 1.5rem;
+  }
+  .edu-item h3 { font-size: 1.1rem; margin-bottom: 0.4rem; }
+  .edu-item .edu-school { color: var(--accent); font-size: 0.9rem; margin-bottom: 0.3rem; }
+  .edu-item .edu-date { font-size: 0.82rem; color: var(--ink-muted); margin-bottom: 0.6rem; }
+  .edu-item p { font-size: 0.9rem; }
+
+  /* Contact */
+  .contact {
+    background: var(--ink);
+    color: var(--bg);
+    border-top: none;
+  }
+  .contact h2, .contact .section-label { color: var(--bg); }
+  .contact .section-label { color: var(--accent-soft); }
+  .contact p { color: rgba(247, 244, 238, 0.75); margin-bottom: 2rem; max-width: 56ch; font-size: 1.05rem; }
+  .contact a { color: var(--bg); }
+  .contact a:hover { color: var(--accent-soft); }
+  .contact .btn-primary {
+    background: var(--bg);
+    color: var(--ink);
+    border-color: var(--bg);
+  }
+  .contact .btn-primary:hover {
+    background: var(--accent-soft);
+    border-color: var(--accent-soft);
+    color: var(--ink);
+  }
+  .contact .btn-secondary {
+    border-color: rgba(247, 244, 238, 0.4);
+    color: var(--bg);
+  }
+  .contact .btn-secondary:hover {
+    background: var(--bg);
+    color: var(--ink);
+    border-color: var(--bg);
+  }
+
+  /* Footer */
+  footer {
+    padding: 2.5rem 0;
+    border-top: 1px solid rgba(247, 244, 238, 0.15);
+    background: var(--ink);
+    color: rgba(247, 244, 238, 0.6);
+    font-size: 0.85rem;
+  }
+  footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  footer a { color: rgba(247, 244, 238, 0.85); }
+
+  /* Subtle reveal */
+  @media (prefers-reduced-motion: no-preference) {
+    section > .container > * {
+      animation: rise 0.7s ease both;
+    }
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <a href="#" class="brand">Upasana Sen</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#tools">Tools</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-meta">Lund, Sweden · Available immediately</div>
+    <h1>ESG reporting work, structured as <em>real delivery.</em></h1>
+    <p class="hero-lead">
+      Sustainability MSc (Lund) · Project Management MSc (EAE) · Professional Swedish.
+      I help sustainability teams turn CSRD/ESRS, VSME, and supplier ESG requirements into
+      structured, trackable workflows — and I ship working tools to prove it.
+    </p>
+    <div class="hero-actions">
+      <a href="#tools" class="btn btn-primary">See live tools</a>
+      <a href="#contact" class="btn btn-secondary">Get in touch</a>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><div class="stat-num">60+</div><div class="stat-label">Suppliers assessed</div></div>
+      <div class="stat"><div class="stat-num">100+</div><div class="stat-label">Startups advised</div></div>
+      <div class="stat"><div class="stat-num">3</div><div class="stat-label">Live ESG tools</div></div>
+      <div class="stat"><div class="stat-num">2</div><div class="stat-label">Master's degrees</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <div class="container">
+    <div class="about-grid">
+      <div>
+        <div class="section-label">About</div>
+        <h2>Sustainability work, project-managed.</h2>
+      </div>
+      <div>
+        <p>
+          I'm an ESG and sustainability professional with four years of hands-on experience across
+          ESG advisory, supplier sustainability, sustainability content, and project coordination —
+          with a dual-master's foundation in environmental science and project management.
+        </p>
+        <p>
+          My edge is the combination: I understand the frameworks (CSRD, ESRS, VSME, GHG Protocol, TCFD)
+          <em>and</em> the delivery work that gets them implemented (stakeholder mapping, evidence registers,
+          risk tracking, cross-functional coordination). I also build working tools — Streamlit dashboards,
+          AI-powered analyzers — that make ESG reporting faster and more transparent.
+        </p>
+        <p>
+          I'm currently based in India and actively job-searching across Sweden and the EU,
+          targeting ESG reporting, sustainability project coordination, and climate analyst roles.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIVE TOOLS  -->
+<section id="tools">
+  <div class="container">
+    <div class="section-label">Live ESG Tools</div>
+    <h2>Three tools, shipped and running.</h2>
+    <p style="max-width: 60ch; margin-bottom: 1rem;">
+      Each one solves a real ESG problem and is live for anyone to use. Code is open-source on GitHub.
+    </p>
+
+    <div class="tools-grid">
+
+      <!-- Tool 1: ESG Analyzer -->
+      <article class="tool-card">
+        <div class="tool-text">
+          <div>
+            <h3>ESG Report Analyser</h3>
+            <p>
+              AI tool that ingests sustainability PDFs, extracts KPIs, flags weak or greenwashed
+              claims, and scores reports against GRI and ESRS — turning a multi-day analyst task
+              into a first-pass review in minutes.
+            </p>
+            <div class="tool-stack">
+              <span class="stack-tag">Python</span>
+              <span class="stack-tag">Claude API</span>
+              <span class="stack-tag">LangChain</span>
+              <span class="stack-tag">Streamlit</span>
+            </div>
+          </div>
+          <div class="tool-links">
+            <a href="https://esganalyser-vi66mikxysdymj3hyd8aga.streamlit.app" target="_blank" rel="noopener">Live demo →</a>
+            <a href="https://github.com/upasanasen/ESG_analyser" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </div>
+        <div class="tool-img">
+          <img src="images/esg-analyzer.png" alt="ESG Report Analyser dashboard" onerror="this.style.display='none'; this.parentNode.innerHTML='<div class=&quot;tool-img-placeholder&quot;>Screenshot<br>esg-analyzer.png</div>'">
+        </div>
+      </article>
+
+      <!-- Tool 2: Carbon-Aware -->
+      <article class="tool-card">
+        <div class="tool-text">
+          <div>
+            <h3>Carbon-Aware Cloud Decision Tool</h3>
+            <p>
+              Decision-support tool that combines EEA 2023 grid emissions data with internal carbon
+              pricing to surface each cloud region's location-based Scope 2 impact — letting
+              engineering teams cut footprint without changing architecture.
+            </p>
+            <div class="tool-stack">
+              <span class="stack-tag">Python</span>
+              <span class="stack-tag">Streamlit</span>
+              <span class="stack-tag">EEA Data</span>
+              <span class="stack-tag">GHG Protocol Scope 2</span>
+            </div>
+          </div>
+          <div class="tool-links">
+            <a href="https://carbon-aware-cloud-tool.streamlit.app" target="_blank" rel="noopener">Live demo →</a>
+            <a href="https://github.com/upasanasen/carbon-aware-cloud-decision-too" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </div>
+        <div class="tool-img">
+          <img src="images/carbon-aware-tool.png" alt="Carbon-Aware Cloud Decision Tool" onerror="this.style.display='none'; this.parentNode.innerHTML='<div class=&quot;tool-img-placeholder&quot;>Screenshot<br>carbon-aware-tool.png</div>'">
+        </div>
+      </article>
+
+      <!-- Tool 3: Workplace Dashboard -->
+      <article class="tool-card">
+        <div class="tool-text">
+          <div>
+            <h3>Sustainable Workplace Transformation Dashboard</h3>
+            <p>
+              Multi-site programme dashboard integrating carbon analysis, ROI modelling, vendor ESG
+              scoring, governance tracking, and compliance monitoring — replacing scattered trackers
+              with one programme-level view leadership can act on.
+            </p>
+            <div class="tool-stack">
+              <span class="stack-tag">Python</span>
+              <span class="stack-tag">Streamlit</span>
+              <span class="stack-tag">Pandas</span>
+              <span class="stack-tag">Pydeck</span>
+            </div>
+          </div>
+          <div class="tool-links">
+            <a href="https://sustainable-workplace-dashboard.streamlit.app/" target="_blank" rel="noopener">Live demo →</a>
+            <a href="https://github.com/upasanasen/sustainable-workplace-dashboard" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </div>
+        <div class="tool-img">
+          <img src="images/workplace-dashboard.png" alt="Sustainable Workplace Transformation Dashboard" onerror="this.style.display='none'; this.parentNode.innerHTML='<div class=&quot;tool-img-placeholder&quot;>Screenshot<br>workplace-dashboard.png</div>'">
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="container">
+    <div class="section-label">Experience</div>
+    <h2>Career so far.</h2>
+
+    <div class="timeline">
+
+      <div class="role">
+        <div class="role-meta">
+          <div class="role-date">2025</div>
+          <div>Jul – Sep · Barcelona</div>
+        </div>
+        <div class="role-body">
+          <h3>Business Developer</h3>
+          <div class="role-org">Beder</div>
+          <p>B2B lead research, CRM tracking, demo coordination, and outreach across European and U.S. markets — translates directly to ESG SaaS and client coordination roles.</p>
+        </div>
+      </div>
+
+      <div class="role">
+        <div class="role-meta">
+          <div class="role-date">2022 – 2025</div>
+          <div>Sweden</div>
+        </div>
+        <div class="role-body">
+          <h3>Founder & Sustainability Content Lead</h3>
+          <div class="role-org">NaturVäg</div>
+          <p>Built a sustainability content platform with 50+ published articles reaching audiences across Europe and India. Owned editorial planning, stakeholder coordination, and project workflows end-to-end.</p>
+        </div>
+      </div>
+
+      <div class="role">
+        <div class="role-meta">
+          <div class="role-date">2022 – 2023</div>
+          <div>Europe</div>
+        </div>
+        <div class="role-body">
+          <h3>Sustainability Advisor — ESG Vendor Evaluation</h3>
+          <div class="role-org">Green Cloud Nine</div>
+          <p>Assessed 60+ marketplace vendors and 150+ products / data points across the company's first sustainability report. Built vendor-scoring framework that reduced onboarding ambiguity.</p>
+        </div>
+      </div>
+
+      <div class="role">
+        <div class="role-meta">
+          <div class="role-date">2019 – 2024</div>
+          <div>Canada · UNESCO Chair</div>
+        </div>
+        <div class="role-body">
+          <h3>Sustainability Research Collaborator</h3>
+          <div class="role-org">Brock University</div>
+          <p>Developed ecosystem-based adaptation linkage models and gender-responsive climate frameworks. Cross-country comparative climate analysis across three countries.</p>
+        </div>
+      </div>
+
+      <div class="role">
+        <div class="role-meta">
+          <div class="role-date">2021 – 2022</div>
+          <div>Malmö, Sweden</div>
+        </div>
+        <div class="role-body">
+          <h3>Venture Advisor & Sustainability Analyst</h3>
+          <div class="role-org">Skåne Startups</div>
+          <p>Supported 100+ startups integrating sustainability into business models. Facilitated investor–startup matchmaking for 30–40+ founders across 400+ ecosystem participants.</p>
+        </div>
+      </div>
+
+      <div class="role">
+        <div class="role-meta">
+          <div class="role-date">2020</div>
+          <div>Malmö, Sweden</div>
+        </div>
+        <div class="role-body">
+          <h3>Sustainability Solutions Intern</h3>
+          <div class="role-org">Botildenborg</div>
+          <p>Interviewed 20+ farmers and residents to map local food supply chain bottlenecks. Developed Causal Loop Diagrams used in community workshops promoting urban farming across Skåne.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Education -->
+    <div style="margin-top: clamp(50px, 7vw, 80px);">
+      <div class="section-label">Education</div>
+      <h2>Two master's, one through-line.</h2>
+      <div class="edu">
+        <div class="edu-item">
+          <h3>MSc Project Management</h3>
+          <div class="edu-school">EAE Business School</div>
+          <div class="edu-date">2024 – 2025 · Barcelona</div>
+          <p>Agile & Waterfall delivery, risk management, stakeholder management. Certified Scrum Master.</p>
+        </div>
+        <div class="edu-item">
+          <h3>MSc Environmental Studies & Sustainability Science</h3>
+          <div class="edu-school">Lund University (LUMES)</div>
+          <div class="edu-date">2019 – 2022 · Lund</div>
+          <p>Earth system science, climate governance, sustainability assessment, systems thinking.</p>
+        </div>
+        <div class="edu-item">
+          <h3>BSc Agricultural Extension & Community Science</h3>
+          <div class="edu-school">SHUATS</div>
+          <div class="edu-date">2014 – 2018 · Prayagraj, India</div>
+          <p>Food systems, agricultural supply chains, community development. Research internships in Italy and India.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+    <div class="section-label">Skills & Frameworks</div>
+    <h2>What I bring on day one.</h2>
+
+    <div class="skills-grid">
+
+      <div class="skill-group">
+        <h3>ESG Frameworks</h3>
+        <ul>
+          <li>CSRD / ESRS readiness</li>
+          <li>VSME for SMEs</li>
+          <li>Double materiality</li>
+          <li>EU Taxonomy</li>
+          <li>GHG Protocol (S1/S2/S3)</li>
+          <li>TCFD climate risk</li>
+          <li>Life Cycle Assessment</li>
+        </ul>
+      </div>
+
+      <div class="skill-group">
+        <h3>Tools & Data</h3>
+        <ul>
+          <li>Python (Pandas, NumPy)</li>
+          <li>XGBoost · SHAP</li>
+          <li>Streamlit dashboards</li>
+          <li>Power BI</li>
+          <li>Claude API · LangChain</li>
+          <li>MS Project · Jira</li>
+          <li>Advanced Excel</li>
+        </ul>
+      </div>
+
+      <div class="skill-group">
+        <h3>Project Delivery</h3>
+        <ul>
+          <li>Agile & Scrum (CSM)</li>
+          <li>Waterfall · PRINCE2</li>
+          <li>Stakeholder management</li>
+          <li>Risk management</li>
+          <li>WBS · RACI</li>
+          <li>Sprint planning</li>
+          <li>Cross-functional delivery</li>
+        </ul>
+      </div>
+
+      <div class="skill-group">
+        <h3>Languages</h3>
+        <ul>
+          <li>Swedish — Professional</li>
+          <li>English — Full Professional</li>
+          <li>Spanish — Working</li>
+          <li>Hindi — Native</li>
+          <li>Bengali — Native</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="container">
+    <div class="section-label">Contact</div>
+    <h2>I'm open to ESG roles in the EU.</h2>
+    <p>
+      ESG Reporting · Sustainability Project Coordination · Supplier ESG · ESG Data ·
+      ESG SaaS Implementation. Available immediately.
+    </p>
+    <div class="hero-actions">
+      <a href="mailto:upasana19sen95@gmail.com?subject=Tailored%20CV%20request" class="btn btn-primary">Email me</a>
+      <a href="https://linkedin.com/in/upasana-sen" target="_blank" rel="noopener" class="btn btn-secondary">LinkedIn</a>
+      <a href="https://github.com/upasanasen" target="_blank" rel="noopener" class="btn btn-secondary">GitHub</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div>© 2026 Upasana Sen · Lund, Sweden</div>
+    <div>
+      <a href="https://linkedin.com/in/upasana-sen">LinkedIn</a> ·
+      <a href="https://github.com/upasanasen">GitHub</a> ·
+      <a href="mailto:upasana19sen95@gmail.com">Email</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
